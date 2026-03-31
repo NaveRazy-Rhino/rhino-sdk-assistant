@@ -26,7 +26,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 - Rebased the root portable skill on the merged repo root as `SKILL.md`
 - Renamed granular skills to short names: `guide`, `write`, `plan`, `debug`, `metrics`, `harmonize`, `example`
 - Updated granular skills to load shared references through per-skill `references` symlinks
-- Updated repository metadata to point to `NaveRazy-Rhino/rhino-sdk-skills`
+- Updated repository metadata to point to `NaveRazy-Rhino/rhino-sdk-assistant`
 - Updated `scripts/sync-context.sh` to sync `context/` into the root `references/` bundle
 
 ### Removed

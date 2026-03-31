@@ -2,7 +2,7 @@
 
 Unified AI tooling for the [Rhino Health](https://www.rhinohealth.com/) Python SDK (`rhino-health`).
 
-Repository name: `rhino-sdk-skills`  
+Repository name: `rhino-sdk-assistant`  
 Installed plugin/skill name: `rhino-sdk`
 
 This repo now ships through **three channels**:
@@ -29,7 +29,7 @@ This repo now ships through **three channels**:
 For the full Claude Code experience:
 
 ```bash
-claude plugin install NaveRazy-Rhino/rhino-sdk-skills
+claude plugin install NaveRazy-Rhino/rhino-sdk-assistant
 ```
 
 This gives you:
@@ -45,7 +45,7 @@ For the full Cursor experience, install it as a Cursor plugin.
 **Local development install:**
 
 ```bash
-ln -s /absolute/path/to/rhino-sdk-skills ~/.cursor/plugins/local/rhino-sdk
+ln -s /absolute/path/to/rhino-sdk-assistant ~/.cursor/plugins/local/rhino-sdk
 ```
 
 Then reload Cursor.
@@ -63,7 +63,7 @@ This gives you:
 For the portable Agent Skills install:
 
 ```bash
-npx skills add NaveRazy-Rhino/rhino-sdk-skills
+npx skills add NaveRazy-Rhino/rhino-sdk-assistant
 ```
 
 Recommended: select the top-level **`rhino-sdk`** skill for the self-contained all-in-one experience.
@@ -71,10 +71,10 @@ Recommended: select the top-level **`rhino-sdk`** skill for the self-contained a
 You can also target a specific agent:
 
 ```bash
-npx skills add NaveRazy-Rhino/rhino-sdk-skills -a cursor
-npx skills add NaveRazy-Rhino/rhino-sdk-skills -a codex
-npx skills add NaveRazy-Rhino/rhino-sdk-skills -a gemini-cli
-npx skills add NaveRazy-Rhino/rhino-sdk-skills -a github-copilot
+npx skills add NaveRazy-Rhino/rhino-sdk-assistant -a cursor
+npx skills add NaveRazy-Rhino/rhino-sdk-assistant -a codex
+npx skills add NaveRazy-Rhino/rhino-sdk-assistant -a gemini-cli
+npx skills add NaveRazy-Rhino/rhino-sdk-assistant -a github-copilot
 ```
 
 ## Skills
@@ -93,7 +93,7 @@ npx skills add NaveRazy-Rhino/rhino-sdk-skills -a github-copilot
 ## Repository Layout
 
 ```text
-rhino-sdk-skills/
+rhino-sdk-assistant/
 ├── .claude-plugin/            # Claude Code manifest + marketplace metadata
 ├── .cursor-plugin/            # Cursor plugin manifest
 ├── SKILL.md                   # Self-contained all-in-one skill for npx installs
@@ -178,7 +178,7 @@ Human workflow:
 - **Claude Code** and **Cursor** get the full plugin experience: skills + agent + hook
 - **Other tools** get the skills via the Agent Skills standard
 - The base Agent Skills spec does not ship agents or hooks, so those remain plugin-only features
-- The public repo is named `rhino-sdk-skills` to avoid confusion with the actual Rhino Python SDK, but the installed plugin/skill namespace remains `rhino-sdk`
+- The public repo is named `rhino-sdk-assistant` to avoid confusion with the actual Rhino Python SDK, but the installed plugin/skill namespace remains `rhino-sdk`
 
 ## License
 
