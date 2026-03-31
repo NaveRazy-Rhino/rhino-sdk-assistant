@@ -10,6 +10,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
 - Internal `tools/doc-sync/` maintenance workflow with `doc_sync.py`, report output, and an operator skill for refreshing SDK docs against the published Rhino documentation site
 - Internal `tools/feedback-loop/` maintenance workflow with a feedback-processing skill, JSON schema, inbox, and append-only feedback log scaffold
+- Experimental bundled plugin MCP configs for all Rhino environments via `mcp.json` and `.mcp.json`, with every server entry marked `disabled: true` for install-flow testing
 
 ## [0.2.0] - 2026-03-31
 

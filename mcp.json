@@ -1,0 +1,68 @@
+{
+  "mcpServers": {
+    "rhino-prod-aws": {
+      "url": "https://mcp.rhinohealth.com/mcp",
+      "disabled": true
+    },
+    "rhino-prod-gcp": {
+      "url": "https://mcp.rhinofcp.com/mcp",
+      "disabled": true
+    },
+    "rhino-prod-us2-gcp": {
+      "url": "https://mcp-prod-us2.rhinofcp.com/mcp",
+      "disabled": true
+    },
+    "rhino-staging-aws": {
+      "url": "https://mcp-staging.rhinohealth.com/mcp",
+      "disabled": true
+    },
+    "rhino-staging-gcp": {
+      "url": "https://mcp-staging.rhinofcp.com/mcp",
+      "disabled": true
+    },
+    "rhino-qa-cloud-aws": {
+      "url": "https://mcp-qa-cloud.rhinohealth.com/mcp",
+      "disabled": true
+    },
+    "rhino-qa-cloud-gcp": {
+      "url": "https://mcp-qa-cloud.rhinofcp.com/mcp",
+      "disabled": true
+    },
+    "rhino-dev1-aws": {
+      "url": "https://mcp-dev1.rhinohealth.com/mcp",
+      "disabled": true
+    },
+    "rhino-dev1-gcp": {
+      "url": "https://mcp-dev1.rhinofcp.com/mcp",
+      "disabled": true
+    },
+    "rhino-dev2-gcp": {
+      "url": "https://mcp-dev2.rhinofcp.com/mcp",
+      "disabled": true
+    },
+    "rhino-dev3-gcp": {
+      "url": "https://mcp-dev3.rhinofcp.com/mcp",
+      "disabled": true
+    },
+    "rhino-dev5-gcp": {
+      "url": "https://mcp-dev5.rhinofcp.com/mcp",
+      "disabled": true
+    },
+    "rhino-dev6-gcp": {
+      "url": "https://mcp-dev6.rhinofcp.com/mcp",
+      "disabled": true
+    },
+    "rhino-solutions-gcp": {
+      "url": "https://mcp-solutions.rhinofcp.com/mcp",
+      "disabled": true
+    },
+    "rhino-demo-aws": {
+      "url": "https://mcp-demo.rhinohealth.com/mcp",
+      "disabled": true
+    },
+    "rhino-demo-dev-aws": {
+      "url": "https://mcp-demo-dev.rhinohealth.com/mcp",
+      "disabled": true
+    }
+  }
+}
