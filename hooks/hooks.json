@@ -1,0 +1,17 @@
+{
+  "description": "Validates rhino-health SDK import paths after file writes/edits",
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 ${CLAUDE_PLUGIN_ROOT}/hooks/validate_sdk_imports.py",
+            "timeout": 5
+          }
+        ]
+      }
+    ]
+  }
+}

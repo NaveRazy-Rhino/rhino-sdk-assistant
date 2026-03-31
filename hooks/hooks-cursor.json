@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "hooks": {
+    "afterFileEdit": [
+      {
+        "command": "python3 ${CURSOR_PLUGIN_ROOT}/hooks/validate_sdk_imports.py"
+      }
+    ]
+  }
+}

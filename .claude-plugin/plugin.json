@@ -1,0 +1,17 @@
+{
+  "name": "rhino-sdk",
+  "version": "0.2.0",
+  "description": "Expert guidance for writing Rhino Health Python SDK code. API reference, code generation, debugging, metrics, data harmonization, and working examples.",
+  "author": {
+    "name": "Rhino Health"
+  },
+  "repository": "https://github.com/NaveRazy-Rhino/rhino-sdk-skills",
+  "license": "MIT",
+  "keywords": [
+    "rhino-health",
+    "federated-learning",
+    "sdk",
+    "healthcare",
+    "python"
+  ]
+}

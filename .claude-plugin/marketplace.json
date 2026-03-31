@@ -1,0 +1,18 @@
+{
+  "name": "rhino-sdk-marketplace",
+  "description": "Marketplace for Rhino Health SDK plugins",
+  "owner": {
+    "name": "Rhino Health"
+  },
+  "plugins": [
+    {
+      "name": "rhino-sdk",
+      "description": "Expert guidance for writing Rhino Health Python SDK code. API reference, code generation, debugging, metrics, data harmonization, and working examples.",
+      "version": "0.2.0",
+      "source": "./",
+      "author": {
+        "name": "Rhino Health"
+      }
+    }
+  ]
+}

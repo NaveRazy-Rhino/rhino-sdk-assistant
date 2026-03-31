@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.DS_Store
+
+tools/doc-sync/.cache/
+tools/doc-sync/reports/*.md
+!tools/doc-sync/reports/.gitkeep

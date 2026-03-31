@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Rhino SDK Feedback Item",
+  "type": "object",
+  "required": [
+    "source",
+    "category",
+    "description",
+    "priority"
+  ],
+  "properties": {
+    "source": {
+      "type": "string",
+      "enum": [
+        "chat",
+        "github_issue",
+        "file"
+      ]
+    },
+    "issue_url": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "wrong_output",
+        "missing_knowledge",
+        "bad_pattern",
+        "skill_ux",
+        "hook_false_positive",
+        "other"
+      ]
+    },
+    "description": {
+      "type": "string",
+      "minLength": 1
+    },
+    "expected_behavior": {
+      "type": "string"
+    },
+    "actual_behavior": {
+      "type": "string"
+    },
+    "sdk_version": {
+      "type": "string"
+    },
+    "skill_used": {
+      "type": "string"
+    },
+    "code_snippet": {
+      "type": "string"
+    },
+    "priority": {
+      "type": "string",
+      "enum": [
+        "critical",
+        "high",
+        "medium",
+        "low"
+      ]
+    }
+  },
+  "additionalProperties": true
+}
