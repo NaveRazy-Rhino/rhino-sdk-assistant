@@ -37,28 +37,6 @@ This gives you:
 - 7 granular plugin skills
 - `sdk-reviewer` agent
 - import-validation hook on file writes
-- bundled Rhino MCP endpoints for all supported environments
-
-Plugin installs also ship a plugin-level MCP configuration with all Rhino environments predeclared:
-
-- `rhino-prod-aws`
-- `rhino-prod-gcp`
-- `rhino-prod-us2-gcp`
-- `rhino-staging-aws`
-- `rhino-staging-gcp`
-- `rhino-qa-cloud-aws`
-- `rhino-qa-cloud-gcp`
-- `rhino-dev1-aws`
-- `rhino-dev1-gcp`
-- `rhino-dev2-gcp`
-- `rhino-dev3-gcp`
-- `rhino-dev5-gcp`
-- `rhino-dev6-gcp`
-- `rhino-solutions-gcp`
-- `rhino-demo-aws`
-- `rhino-demo-dev-aws`
-
-They are configured with `disabled: true` so we can test an install flow where the plugin auto-adds all environments but users only enable the one that matches their deployment.
 
 ### Cursor
 
@@ -79,9 +57,6 @@ This gives you:
 - 7 granular plugin skills
 - `sdk-reviewer` agent
 - import-validation hook on file edits
-- bundled Rhino MCP endpoints for all supported environments
-
-The Cursor plugin explicitly points to `mcp.json`, which contains the same full environment list and marks each entry as `disabled: true` for this experiment.
 
 ### Any Agent via `npx skills add`
 
@@ -92,8 +67,6 @@ npx skills add NaveRazy-Rhino/rhino-sdk-assistant
 ```
 
 Recommended: select the top-level **`rhino-sdk`** skill for the self-contained all-in-one experience.
-
-Note: the `npx skills add` path does not auto-install MCP servers. The bundled MCP configs are plugin-only today.
 
 You can also target a specific agent:
 
@@ -206,8 +179,6 @@ Human workflow:
 - **Other tools** get the skills via the Agent Skills standard
 - The base Agent Skills spec does not ship agents or hooks, so those remain plugin-only features
 - The public repo is named `rhino-sdk-assistant` to avoid confusion with the actual Rhino Python SDK, but the installed plugin/skill namespace remains `rhino-sdk`
-- Plugin installs now also bundle Rhino remote MCP endpoint definitions for every supported environment via `mcp.json` (Cursor) and `.mcp.json` (Claude Code)
-- The current setup is intentionally experimental: every MCP entry is declared with `disabled: true` so we can observe real install behavior before deciding on the final enablement strategy
 
 ## License
 
